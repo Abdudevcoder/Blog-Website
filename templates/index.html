@@ -1,0 +1,74 @@
+ {% extends 'base.html' %}
+
+{% block body %}
+<!-- ------------------------ Slider ------------------------ -->
+<div class=""> 
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='img/img-1.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/img-2.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='img/img-3.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------ Slider (end) ------------------------ -->
+
+  <!-- ------------------------ Card block ------------------------ -->
+  <div class="container d-flex justify-content-around pt-5 pb-5">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{ url_for('static', filename='img/card1.jpg') }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Все статьи</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/about" class="btn btn-primary">Перейти к статьям</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{ url_for('static', filename='img/card2.jpg') }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Все категории</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/category" class="btn btn-primary">Перейти к категорям</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ------------------------ Card block (end) ------------------------ -->
+
+  <!-- ------------------------ Profile block (start) ------------------------ -->
+  <div class="container" style="width: 45%;">
+    <div class="card mb-3" style="border-style: none;">
+      <img class="card-img-top" src="{{ url_for('static', filename='img/prof1.webp') }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Первое дорожное путешествие</h5>
+        <p class="card-text">Создайте подзаголовок поста: одно-два предложения, которые кратко передают содержание поста и побуждают продолжить чтение Это текст...</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card mb-3" style="border-style: none;">
+      <img class="card-img-top" src="{{ url_for('static', filename='img/prof2.webp') }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Рабочее место минималиста</h5>
+        <p class="card-text">Создайте подзаголовок поста: одно-два предложения, которые кратко передают содержание поста и побуждают продолжить чтение Это текст...</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card mb-3" style="border-style: none;">
+      <img class="card-img-top" src="{{ url_for('static', filename='img/prof3.webp') }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Находки фермерского рынка</h5>
+        <p class="card-text">Создайте подзаголовок поста: одно-два предложения, которые кратко передают содержание поста и побуждают продолжить чтение Это текст...</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------ Profile block (end) ------------------------ -->
+
+  
+{% endblock %}
